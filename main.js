@@ -1,12 +1,12 @@
 console.log("we are working here???");
 
 document.getElementById('diagnosButton').addEventListener('click',function(){
-    let patientName = document.querySelector('#patient_name');
+    let patientName = document.querySelector('#patient_name').value;
     let ageRange = document.querySelector('#age_range');
     let symptons = document.querySelector('#sypmtons');
      
     let verdict = chechSymptoms(getSymptoms(symptons.value));
-    let output = patientName+" " +verdict
+    let output = `${patientName} ${verdict}`;
     document.querySelector("#result").innerHTML=output
 
     
