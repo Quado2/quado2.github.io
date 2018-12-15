@@ -6,7 +6,8 @@ document.getElementById('diagnosButton').addEventListener('click',function(){
     let symptons = document.querySelector('#sypmtons');
      
     let verdict = chechSymptoms(getSymptoms(symptons.value));
-    document.querySelector("#result").innerHTML=verdict
+    let output = patientName+" " +verdict
+    document.querySelector("#result").innerHTML=output
 
     
     // console.log(patientName.value,ageRange.value,symptons.value)
